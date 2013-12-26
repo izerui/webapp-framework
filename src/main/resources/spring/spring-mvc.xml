@@ -31,11 +31,15 @@
             <mvc:mapping path="/**" />
             <bean
                 class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
-                <property name="paramName" value="locale"></property>
+                <property name="paramName" value="language"></property>
             </bean>
         </mvc:interceptor>
     </mvc:interceptors>
 
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<property name="defaultLocale" value="en" />
+	</bean>
 
     <bean id="viewResolver"
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">

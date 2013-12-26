@@ -13,7 +13,7 @@
         class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
         <property name="basenames">
             <list>
-                <value>i18n/application-messages</value>
+                <value>classpath:i18n/messages</value>
             </list>
         </property>
     </bean>

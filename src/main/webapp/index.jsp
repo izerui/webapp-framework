@@ -17,6 +17,14 @@
 --%>
 <html>
 <body>
-<h2>Hello World!</h2>
+<h1><spring:message code="com.izerui.default.title" /></h1>
+ 
+Language : <a href="?language=en">English</a>|<a href="?language=zh_CN">Chinese</a>
+ 
+<h3>
+welcome.springmvc : <spring:message code="helloworld" />
+</h3>
+
+ 
 </body>
 </html>
