@@ -219,8 +219,11 @@
 			<artifactId>joda-time</artifactId>
 			<version>${joda-time.version}</version>
 		</dependency>
-		<!-- <dependency> <groupId>joda-time</groupId> <artifactId>joda-time-jsptags</artifactId> 
-			<version>${joda-time.joda-time-jsptags.version}</version> </dependency> -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time-jsptags</artifactId>
+			<version>${joda-time.joda-time-jsptags.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.jadira.usertype</groupId>
 			<artifactId>usertype.core</artifactId>
@@ -610,7 +613,29 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- == End Spring == -->
-
+		
+		<!-- == Begin Tiles == -->
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-core</artifactId>
+			<version>${org.apache.tiles.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>commons-logging</artifactId>
+					<groupId>commons-logging</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jcl-over-slf4j</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-jsp</artifactId>
+			<version>${org.apache.tiles.version}</version>
+		</dependency>
+		<!-- == End Tiles == -->
 
 		<!-- == Begin Other JavaEE/SE APIs == -->
 		<dependency>
@@ -680,7 +705,7 @@
 		<ma.glasnost.orika>1.4.3</ma.glasnost.orika>
 		<!-- == Joda-Time == -->
 		<joda-time.version>2.2</joda-time.version>
-		<!-- <joda-time.joda-time-jsptags.version>1.1.1</joda-time.joda-time-jsptags.version> -->
+		<joda-time.joda-time-jsptags.version>1.1.1</joda-time.joda-time-jsptags.version>
 		<jadira-usertype-core.version>3.0.0.GA</jadira-usertype-core.version>
 		<!-- == AspectJ == -->
 		<org.aspectj-version>1.7.3</org.aspectj-version>
@@ -701,6 +726,8 @@
 		<org.springframework.data.spring-data-jpa.version>1.3.4.RELEASE</org.springframework.data.spring-data-jpa.version>
 		<org.springframework.data.version>1.5.2.RELEASE</org.springframework.data.version>
 		<org.springframework.security.version>3.2.0.RELEASE</org.springframework.security.version>
+		<!-- == Tiles == -->
+        <org.apache.tiles.version>3.0.3</org.apache.tiles.version>
 		<!-- == JavaEE/SE APIs == -->
 		<javax.inject.version>1</javax.inject.version>
 		<javax.servlet.jstl.version>1.2</javax.servlet.jstl.version>
