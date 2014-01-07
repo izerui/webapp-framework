@@ -20,7 +20,7 @@ body {
     <jsp:include page="layout/header.jsp" />
       <div class="col-sm-12">
         <p class="alert alert-danger">
-          Your request is not found...<br /> <a
+          <spring:message code="exception.page.notfound" ></spring:message><br /> <a
             href="${pageContext.request.contextPath}" class="btn btn-default">Go
             to TOP</a>
         </p>

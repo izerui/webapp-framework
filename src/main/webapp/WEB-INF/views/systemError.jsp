@@ -20,7 +20,7 @@ body {
     <jsp:include page="layout/header.jsp" />
       <div class="col-sm-12">
         <p class="alert alert-danger">
-          Error...${exception}<br /> <a
+          <spring:message code="exception.page.systemerror" ></spring:message> ${exception}<br /> <a
             href="${pageContext.request.contextPath}" class="btn btn-default">Go
             to TOP</a>
         </p>
