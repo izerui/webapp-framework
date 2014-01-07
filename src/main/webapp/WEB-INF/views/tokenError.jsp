@@ -13,14 +13,14 @@ body {
   /* 60px to make the container go all the way to the bottom of the topbar */
 }
 </style>
-<title>SystemError</title>
+<title>TokenError</title>
 </head>
 <body>
   <div class="container">
     <jsp:include page="layout/header.jsp" />
       <div class="col-sm-12">
         <p class="alert alert-danger">
-          Error...${exception}<br /> <a
+          Token Error...<br /> <a
             href="${pageContext.request.contextPath}" class="btn btn-default">Go
             to TOP</a>
         </p>

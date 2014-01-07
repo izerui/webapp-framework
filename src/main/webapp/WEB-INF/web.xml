@@ -23,8 +23,8 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
-            classpath*:spring/applicationContext.xml
-            classpath*:spring/spring-security.xml
+            classpath*:META-INF/spring/applicationContext.xml
+            classpath*:META-INF/spring/spring-security.xml
         </param-value>
 	</context-param>
 
@@ -81,7 +81,7 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath*:spring/spring-mvc.xml</param-value>
+			<param-value>classpath*:META-INF/spring/spring-mvc.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -101,12 +101,24 @@
 		</jsp-property-group>
 	</jsp-config>
 	<error-page>
+		<error-code>400</error-code>
+		<location>/WEB-INF/views/systemError.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>401</error-code>
+		<location>/WEB-INF/views/systemError.jsp</location>
+	</error-page>
+	<error-page>
 		<error-code>404</error-code>
 		<location>/WEB-INF/views/notFoundError.jsp</location>
 	</error-page>
 	<error-page>
 		<error-code>405</error-code>
 		<location>/WEB-INF/views/systemError.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>409</error-code>
+		<location>/WEB-INF/views/tokenError.jsp</location>
 	</error-page>
 	<error-page>
 		<error-code>500</error-code>
