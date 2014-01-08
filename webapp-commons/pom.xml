@@ -6,11 +6,26 @@
 		<artifactId>webapp-project</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	
+
 	<artifactId>webapp-commons</artifactId>
 	<name>webapp-framework commons</name>
-	
-	
+
+	<build>
+		<plugins>
+			<!-- maven-compiler-plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${org.apache.maven.plugins.maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.izerui</groupId>
@@ -18,5 +33,5 @@
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
-	
+
 </project>

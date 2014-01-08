@@ -10,10 +10,21 @@
 	<artifactId>webapp-myweb</artifactId>
 	<name>webapp-framework-myweb</name>
 	<packaging>war</packaging>
-	
+
 	<build>
 		<finalName>webapp-myweb</finalName>
 		<plugins>
+			<!-- maven-compiler-plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${org.apache.maven.plugins.maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
 			<!-- maven war plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -53,7 +64,7 @@
 			<artifactId>webapp-framework</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-		
+
 	</dependencies>
 
 </project>

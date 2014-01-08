@@ -26,7 +26,7 @@
 				<artifactId>license-maven-plugin</artifactId>
 				<version>${license-maven-plugin}</version>
 				<configuration>
-					<header>src/main/resources/META-INF/maven/plugin/license/templates/APACHE-2.txt</header>
+					<header>maven/plugin/license/templates/APACHE-2.txt</header>
 					<properties>
 						<owner>lyh</owner>
 						<project.inceptionYear>2014</project.inceptionYear>

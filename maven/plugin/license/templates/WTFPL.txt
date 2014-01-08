@@ -1,5 +1,4 @@
-<%--
-
+====
     Copyright (C) 2014 lyh (liuyuhua69@gmail.com)
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,6 +12,9 @@
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+====
 
---%>
-<c:redirect url="/user/list" />
+Copyright © ${project.inceptionYear} ${owner} <${email}>
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
