@@ -48,21 +48,6 @@
 					</execution>
 				</executions>
 			</plugin>
-			<!-- 分析项目依赖 -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<version>${org.apache.maven.plugins.maven-dependency-plugin.version}</version>
-				<executions>
-					<execution>
-						<id>install</id>
-						<phase>install</phase>
-						<goals>
-							<goal>sources</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 			<!-- eclipse plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
