@@ -50,7 +50,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/webapp</contextPath>
+						<contextPath>/webapp-myweb</contextPath>
 					</webApp>
 				</configuration>
 			</plugin>
