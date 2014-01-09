@@ -34,7 +34,16 @@
 					<warName>${project.artifactId}</warName>
 				</configuration>
 			</plugin>
-			<!-- tomcat plugin for jee server -->
+			<!-- tomcat6 plugin for jee server -->
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat6-maven-plugin</artifactId>
+				<version>${org.apache.tomcat.maven.version}</version>
+				<configuration>
+					<uriEncoding>UTF-8</uriEncoding>
+				</configuration>
+			</plugin>
+			<!-- tomcat6 plugin for jee server -->
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>

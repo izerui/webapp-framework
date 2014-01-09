@@ -166,7 +166,7 @@
 		<org.apache.maven.plugins.maven-war-plugin.version>2.2</org.apache.maven.plugins.maven-war-plugin.version>
 		<org.apache.maven.plugins.version>2.9</org.apache.maven.plugins.version>
 		<org.apache.maven.wagon.version>1.0-beta-7</org.apache.maven.wagon.version>
-		<org.apache.tomcat.maven.version>2.1</org.apache.tomcat.maven.version>
+		<org.apache.tomcat.maven.version>2.2</org.apache.tomcat.maven.version>
 		<!-- == Other Properties== -->
 		<license-maven-plugin>2.5</license-maven-plugin>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
