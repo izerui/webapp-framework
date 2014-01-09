@@ -30,10 +30,10 @@
 				<li class="active"><a href="${pageContext.request.contextPath}">Home</a></li>
 			</ul>
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="${pageContext.request.contextPath}?language=zh_CN">中文</a></li>
+				<li class="active"><a href="?language=zh_CN">中文</a></li>
 			</ul>
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="${pageContext.request.contextPath}?language=en_US">english</a></li>
+				<li class="active"><a href="?language=en_US">english</a></li>
 			</ul>
 		</div>
 		<!--/.nav-collapse -->
