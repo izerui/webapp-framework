@@ -1,7 +1,33 @@
 webapp-framework
 ================
 
-spring data jpa webapp-framework
+这是一个使用maven 多模块模块构建的 spring web 项目模板
+
+单个maven项目模板请移步:  [GettingStarted][1].
+
+## 技术组件
+该工程采用:
+
+* Spring MVC
+* JPA
+* Hibernate
+* Spring Data JPA
+* Spring Security
+* Apache Tiles
+* SLF4J
+* Logback
+* Joda-Time
+* jQuery
+* Bootstrap
+
+![screen shot][2]
+
+
+  [1]: https://github.com/making/spring-webapp-template/wiki/GettingStarted
+  [2]: https://raw.github.com/making/spring-webapp-template/master/wiki/images/screen08.png
+  
+如何使用?
+==========
 
 step 1. clone the project
 -
